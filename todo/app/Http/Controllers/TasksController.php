@@ -12,7 +12,7 @@ class TasksController extends Controller
     {
          //データの取得（は、モデル(Task)にお願いする。）
         $tasks = Task::all();
-        // dd($tasks);
+        //  dd($tasks);
 
         //viewを返す
         return view('tasks.index', compact('tasks'));
